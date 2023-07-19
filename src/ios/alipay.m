@@ -59,4 +59,21 @@
     }
 }
 
+- (void)isAliPayInstalled:(CDVInvokedUrlCommand*)command
+{
+    callbackId = command.callbackId;
+    CDVPluginResult* pluginResult;
+    NSURL * url = [NSURL URLWithString:@"alipay://"];//注意设置白名单
+    if ([[UIApplication sharedApplication] canOpenURL:url]) { // 安装
+        //自己的代码逻辑处理
+        pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsBool: 1];
+        [self.commandDelegate sendPluginResult:pluginResult callbackId:callbackId];
+        return;
+    } else {
+        pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsBool: 0];
+        [self.commandDelegate sendPluginResult:pluginResult callbackId:callbackId];
+        return;
+    }
+}
+
 @end
