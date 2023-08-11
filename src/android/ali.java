@@ -22,7 +22,7 @@ import android.annotation.SuppressLint;
 /**
  * This class echoes a string called from JavaScript.
  */
-public class alipay extends CordovaPlugin {
+public class ali extends CordovaPlugin {
 
     private static final int SDK_PAY_FLAG = 1;
 

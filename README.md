@@ -1,4 +1,4 @@
-# cordova-plugin-alipay-v2（更新至alipaysdk-15.8.00.201112210139.aar）
+# cordova-plugin-ali（更新至alipaysdk-15.8.00.201112210139.aar）
 支付宝的cordova插件其实在github上已经有很多了，但是都已经是以前的版本了。
 在2016年11月的时候支付宝进行了一次更新，支付宝的SDK升级到2.0版本。
 以前在app中使用支付宝进行支付叫做移动支付，11月之后更名为APP支付。
@@ -53,7 +53,7 @@ cordova.plugins.alipay.payment(payInfo, (e) => {
 # 注意
 插件从v1.0.0开始支持cordova-android 7.0.0，因为cordova-android 7.0.0更改了android项目的文件目录，所以不再兼容以前的老版本，升级前请务必注意。
 
-如果项目是之前的cordova-android老版本，请安装插件以前的老版本，在安装的时候带上版本号即可,cordova-plugin-alipay-v2@0.0.4。
+如果项目是之前的cordova-android老版本，请安装插件以前的老版本，在安装的时候带上版本号即可,cordova-plugin-ali@0.0.4。
 
 #功能说明
 1. 根据支付宝的说明文档的建议，为保证安全，签名都放到后端去做，前端只需要接收后台传入签名字符串，使用该插件调用支付宝SDK完成支付
@@ -70,11 +70,11 @@ cordova.plugins.alipay.payment(payInfo, (e) => {
 ## 在线安装
 npm安装
 ```shell
-cordova plugin add cordova-plugin-alipay-v2 --variable APP_ID=your AppId
+cordova plugin add cordova-plugin-ali --variable APP_ID=your AppId
 ```
 git安装
 ``` shell
-cordova plugin add https://github.com/hhjjj1010/cordova-plugin-alipay-v2.git --variable APP_ID=your AppId
+cordova plugin add https://github.com/hhjjj1010/cordova-plugin-ali.git --variable APP_ID=your AppId
 ```
 
 ## 本地安装

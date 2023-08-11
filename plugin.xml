@@ -1,15 +1,15 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="cordova-plugin-alipay-v2" version="2.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0"
+<plugin id="cordova-plugin-ali" version="2.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android">
-    <name>alipay</name>
+    <name>ali</name>
     <preference name="APP_ID"/>
-    <js-module name="alipay" src="www/alipay.js">
-        <clobbers target="cordova.plugins.alipay"/>
+    <js-module name="ali" src="www/ali.js">
+        <clobbers target="cordova.plugins.ali"/>
     </js-module>
     <platform name="android">
         <config-file parent="/*" target="res/xml/config.xml">
-            <feature name="alipay">
-                <param name="android-package" value="cn.hhjjj.alipay.alipay"/>
+            <feature name="ali">
+                <param name="android-package" value="cn.xxxm.ali.ali"/>
             </feature>
         </config-file>
         <config-file parent="/*" target="AndroidManifest.xml">
@@ -18,17 +18,16 @@
             <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
         </config-file>
 
-        <source-file src="src/android/alipay.java" target-dir="src/cn/hhjjj/alipay"/>
-        <source-file src="src/android/PayResult.java" target-dir="src/cn/hhjjj/alipay"/>
+        <source-file src="src/android/ali.java" target-dir="src/cn/xxxm/ali"/>
+        <source-file src="src/android/PayResult.java" target-dir="src/cn/xxxm/ali"/>
         <lib-file src="src/android/lib/alipaysdk-15.8.00.201112210139.aar" />
-        <framework src="src/android/alipay.gradle" custom="true" type="gradleReference"/>
-
+        <framework src="src/android/ali.gradle" custom="true" type="gradleReference"/>
     </platform>
 
     <platform name="ios">
         <config-file parent="/*" target="config.xml">
-            <feature name="alipay">
-                <param name="ios-package" value="alipay"/>
+            <feature name="ali">
+                <param name="ios-package" value="ali"/>
             </feature>
             <preference name="alipayid" value="$APP_ID"/>
         </config-file>
@@ -59,6 +58,6 @@
 
         <framework src="src/ios/lib/AlipaySDK.framework" custom="true"/>
         <resource-file src="src/ios/lib/AlipaySDK.bundle"/>
-        <source-file src="src/ios/alipay.m"/>
+        <source-file src="src/ios/ali.m"/>
     </platform>
 </plugin>
