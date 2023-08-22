@@ -137,3 +137,4 @@ Xcode的URL Types上alipay的URL Schemes正确格式应为ali2xxxxxxxxxxxxxxx。
 ## 2. 沙箱环境
 在我个人的开发过程中确实是没有使用到沙箱环境，都是直接真实支付1分钱来做测试。
 如要使用沙箱环境，请自行参考[官方文档](https://docs.open.alipay.com/200/105311/)。
+"# cordova-plugin-ali" 
