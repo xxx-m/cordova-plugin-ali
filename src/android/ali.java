@@ -1,4 +1,4 @@
-package cn.hhjjj.alipay;
+package cn.xxxm.ali;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
