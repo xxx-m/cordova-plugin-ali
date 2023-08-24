@@ -9,6 +9,9 @@ import org.json.JSONObject;
 
 import com.alipay.sdk.app.PayTask;
 
+import android.content.ComponentName;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
