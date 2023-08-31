@@ -1,4 +1,4 @@
-/********* alipay.m Cordova Plugin Implementation *******/
+/********* ali.m Cordova Plugin Implementation *******/
 
 #import <Cordova/CDV.h>
 #import <AlipaySDK/AlipaySDK.h>
@@ -10,6 +10,7 @@
 }
 
 - (void)payment:(CDVInvokedUrlCommand*)command;
+- (void)isAliPayInstalled:(CDVInvokedUrlCommand*)command;
 @end
 
 @implementation ali
